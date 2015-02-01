@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/imageInicio1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/dibujo_listview" />
+
+    <ImageView
+        android:id="@+id/rectangulo"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="94dp"
+        android:background="@drawable/rectangulo" />
+    
+    <ImageView
+        android:id="@+id/circulo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-56dp"
+        android:layout_marginTop="-20dp"
+        android:visibility="invisible"
+        android:background="@drawable/circulo" />
+    
+    <ImageView
+        android:id="@+id/circulo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-56dp"
+        android:layout_marginTop="100dp"
+        android:visibility="invisible"
+        android:background="@drawable/circulo" />
+    
+    
+    <ImageView
+        android:id="@+id/circulo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-56dp"
+        android:layout_marginTop="255dp"
+        android:visibility="invisible"
+        android:background="@drawable/circulo" />
+
+    <ImageView
+        android:id="@+id/imageInicio2"
+        android:clickable="true"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/dibujo_listview" />
+
+    <TextView
+        android:id="@+id/txtIneedClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="110dp"
+        android:text="@string/txtIneedClass"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/cabecera" />
+
+    <ImageView
+        android:id="@+id/imageInicio3"
+        android:clickable="true"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="210dp"
+        android:src="@drawable/dibujo_listview" />
+
+    <TextView
+        android:id="@+id/txtClases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="240dp"
+        android:text="@string/txtClases"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/cabecera" />
+
+    <ImageView
+        android:id="@+id/imageInicio4"
+        android:clickable="true"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="340dp"
+        android:src="@drawable/dibujo_listview" />
+
+    <TextView
+        android:id="@+id/txtIntercambio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="370dp"
+        android:text="@string/txtIntercambios"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/cabecera" />
+
+</RelativeLayout>

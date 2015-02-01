@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/imageFoto"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:background="@color/cabecera"
+            android:scaleType="center"
+            android:src="@drawable/contact" />
+
+        <!-- - Bloque Nombre y apellido -->
+
+        <TextView
+            android:id="@+id/tituloNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageFoto"
+            android:layout_marginLeft="32dp"
+            android:gravity="center_vertical"
+            android:text="@string/cabeceraNombre"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tituloNombre"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/textoNombre"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/view1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:ems="10"
+            android:hint="@string/cabeceraNombre" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/textoApellido1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/textoNombre"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:ems="10"
+            android:hint="@string/cabeceraApellidos" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/textoApellido2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/textoApellido1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:ems="10"
+            android:hint="@string/cabeceraApellidos" >
+        </EditText>
+
+        <!-- - Bloque Otros datos personales -->
+
+        <TextView
+            android:id="@+id/tituloVarios"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textoApellido2"
+            android:layout_marginLeft="32dp"
+            android:gravity="center_vertical"
+            android:text="@string/cabeceraVarios"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tituloVarios"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/textoFechaNacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/view2"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:ems="10"
+            android:hint="@string/cabeceraFechaNacimiento"
+            android:inputType="date" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/textoTlf"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/textoFechaNacimiento"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:ems="10"
+            android:hint="@string/cabeceraTelefono"
+            android:inputType="phone" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/textoNacionalidad"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/textoTlf"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:ems="10"
+            android:hint="@string/cabeceraNacionalidad" >
+        </EditText>
+        
+         <Spinner
+            android:id="@+id/textoProvincia"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/textoNacionalidad"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:hint="@string/cabeceraProvincia" />
+         
+         <Spinner
+            android:id="@+id/textoPoblacion"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/textoProvincia"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:hint="@string/cabeceraPoblacion" />
+         
+         
+        
+        <!-- - Bloque datos académicos -->
+
+        <TextView
+            android:id="@+id/tituloDatosAcademicas"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textoPoblacion"
+            android:layout_marginLeft="32dp"
+            android:gravity="center_vertical"
+            android:text="@string/cabeceraDatosAcademicos"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tituloDatosAcademicas"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/textoEstudios"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/view3"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:ems="10"
+            android:hint="@string/cabeceraTitulos">
+        </EditText>
+        
+    </RelativeLayout>
+
+</ScrollView>

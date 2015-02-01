@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_id">353180578191579</string>
+    <string name="title_facebook_login">Login</string>
+    
+    <string name="app_name">NewINeedClass</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    
+    <string name="urlServer">http://s425938729.mialojamiento.es/webs/inc/UploadToServer.php</string>
+    <string name="urlImages">http://s425938729.mialojamiento.es/webs/inc/images/photos/</string>
+    
+    <string name="drawer_open">Settings</string>
+    <string name="drawer_close">MainActivity</string>
+    
+    <string name="txtIneedClass">iNeedClass</string>
+    <string name="txtClases">Clases</string>
+    <string name="txtIntercambios">Intercambios</string>
+    
+    <string name="desHogar">Inicio</string>
+    <string name="desAsignatura">Añadir asignatura</string>
+    <string name="desIntercambio">Añadair intercambio</string>
+    <string name="desPerfil">Mi perfil</string>
+    <string name="desLogin">Login</string>
+    <string name="desTutorial">Tutorial</string>
+    <string name="desNuevoUsuario">Nuevo Usuario</string>
+    <string name="desListarProfesores">Profesores</string>
+    
+    <string name="mail">Mail</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    
+    <string name="conectar">Login</string>
+    <string name="desconectar">Salir</string>
+    
+    <string name="falloLogin">Usuario o password incorrecto</string>
+    
+    <string name="nuevoEnIneedClass">Nuevo en IneedClass? Regístrate!</string>
+    <string name="guardar">Guardar</string>
+    <string name="buscar">Buscar</string>
+    
+    <string name="registrarUsuario">Nuevo usuario</string>
+    <string name="botonRegistrarUsuario">Inscribirse!</string>
+    
+    <string name="registroCorrecto">Usuario registrado correctamente</string>
+    <string name="registroDuplicado">Usuario ya existente en el sistema</string>
+    <string name="registroError">Error en el registro de usuario</string>
+    <string name="registroPasswordIncorrecto">Los passwords introducidos no coinciden</string>
+    
+    <string name="cabeceraNombre">Nombre</string>
+    <string name="cabeceraSexo">Sexo</string>
+    <string name="cabeceraApellidos">Apellidos</string>
+    <string name="cabeceraVarios">Otros datos personales</string>
+    <string name="cabeceraFechaNacimiento">Fecha de nacimiento</string>
+    <string name="cabeceraTelefono">Teléfono</string>
+    <string name="cabeceraNacionalidad">Nacionalidad</string>
+    <string name="cabeceraPoblacion">Población</string>
+    <string name="cabeceraProvincia">Provincia</string>
+    <string name="cabeceraDatosAcademicos">Datos académicos</string>
+    <string name="cabeceraBusco">Busco</string>
+    <string name="cabeceraOfrezco">Ofrezco</string>
+    <string name="cabeceraTitulos">Estudios</string>
+    <string name="cabeceraContrasena">Contraseña</string>
+    <string name="cabeceraNotificacionMail">Notificaciones por email</string>
+    <string name="cabeceraDatosPersonales">Datos Personales</string>
+    
+    <string name="hombre">Hombre</string>
+    <string name="mujer">Mujer</string>
+    
+    <string name="cargandoTxt">Cargando...</string>
+    <string name="guardandoTxt">Guardando datos...</string>
+    
+    <string name="siguiente">Siguiente</string>
+    
+    <!-- Formulario busqueda -->
+    <string name="introProvincia">Seleccione Provincia</string>
+    <string name="introPoblacion">Seleccione Población</string>
+    <string name="introMateria">Seleccione Materia</string>
+    <string name="introCategoria">Seleccione Categoría</string>
+    
+    <!-- Cadenas Listar Profesores -->
+    <string name="txtMateria">Materia</string>
+    <string name="txtPrecio">Precio</string>
+    <string name="txtOfrezco">Ofrezco</string>
+    <string name="txtBusco">Busco</string>
+
+</resources>

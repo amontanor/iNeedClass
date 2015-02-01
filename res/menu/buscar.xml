@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="dotidapp.newineedclass.MainActivity" >
+
+    <item
+        android:id="@+id/optionSearch"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:title="@string/buscar"/>
+
+</menu>

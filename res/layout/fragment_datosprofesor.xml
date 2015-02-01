@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/imageFotoProfesor"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/tituloVarios"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp" />
+
+        <!-- - Bloque Nombre y apellido -->
+
+        <TextView
+            android:id="@+id/textoNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view3"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="60dp"
+            android:ems="10"
+            android:hint="@string/cabeceraNombre" />
+
+        <TextView
+            android:id="@+id/textoApellido1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textoNombre"
+            android:layout_below="@+id/textoNombre"
+            android:layout_marginRight="16dp"
+            android:ems="10"
+            android:hint="@string/cabeceraApellidos" />
+
+        <!-- - Bloque Otros datos personales -->
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tituloVarios"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/darker_gray" />
+
+        <!-- - Bloque datos académicos -->
+
+        <RadioGroup
+            android:id="@+id/radioSexo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textoApellido1"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioHombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/hombre" />
+
+            <RadioButton
+                android:id="@+id/radioMujer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mujer" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textoFechaNacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioSexo"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="175dp"
+            android:ems="10"
+            android:hint="@string/cabeceraFechaNacimiento"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageFotoProfesor"
+            android:layout_below="@+id/view3"
+            android:layout_marginTop="17dp"
+            android:text="@string/cabeceraDatosPersonales"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/datosAcademicos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageFotoProfesor"
+            android:layout_below="@+id/imageFotoProfesor"
+            android:layout_marginTop="30dp"
+            android:text="@string/cabeceraDatosAcademicos"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textoNombreCurso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/datosAcademicos"
+            android:layout_below="@+id/datosAcademicos"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textoComentario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textoPrecio"
+            android:layout_below="@+id/textoPrecio"
+            android:layout_marginTop="13dp"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textoPrecio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textoNombreCurso"
+            android:layout_below="@+id/textoNombreCurso"
+            android:layout_marginTop="13dp"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/ofrezco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/view2"
+            android:layout_alignTop="@+id/textoPrecio"
+            android:text="@string/cabeceraOfrezco"
+            android:visibility="invisible"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textoBusco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textoComentario"
+            android:layout_alignBottom="@+id/textoComentario"
+            android:layout_alignLeft="@+id/textoComentario"
+            android:text="Medium Text"
+            android:visibility="invisible"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/imageCall"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="75dp"
+            android:clickable="true"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/call" />
+
+        <ImageView
+            android:id="@+id/imageMail"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/view2"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="75dp"
+            android:clickable="true"
+            android:src="@drawable/mail" />
+
+    </RelativeLayout>
+
+</ScrollView>

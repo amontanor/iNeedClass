@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <EditText
+        android:id="@+id/txtUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="@string/mail"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/txtRePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtPassword"
+        android:layout_alignRight="@+id/txtPassword"
+        android:layout_below="@+id/txtPassword"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Re-Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtUsuario"
+        android:layout_alignRight="@+id/txtUsuario"
+        android:layout_below="@+id/txtUsuario"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/dibujo_listview" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="325dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txtRePassword"
+        android:layout_marginTop="34dp"
+        android:layout_alignLeft="@+id/txtUsuario"
+        android:layout_alignRight="@+id/txtUsuario"
+        android:background="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/buttonRegistro"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="33dp"
+        android:text="@string/botonRegistrarUsuario"
+        android:textColor="@color/blanco" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:text="@string/registrarUsuario"
+        android:textColor="@color/cabecera"
+        android:textSize="30dp" />
+
+</RelativeLayout>

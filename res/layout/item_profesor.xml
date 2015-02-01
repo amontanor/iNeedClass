@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/contact" />
+
+    <TextView
+        android:id="@+id/txtMateria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/foto"
+        android:layout_marginLeft="16dp"
+        android:text="asasasasa"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/textoFilas" />
+
+    <TextView
+        android:id="@+id/Materia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtMateria"
+        android:layout_below="@+id/txtMateria"
+        android:layout_marginLeft="8dp"
+        android:text="asasasasa"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtPrecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtMateria"
+        android:layout_below="@+id/Materia"
+        android:text="asasasasa"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/textoFilas" />
+
+    <TextView
+        android:id="@+id/precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Materia"
+        android:layout_below="@+id/txtPrecio"
+        android:text="asasasasa"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

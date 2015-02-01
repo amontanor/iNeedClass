@@ -1,0 +1,14 @@
+<resources>
+
+    <color name="cabecera">#45b3c0</color>
+    <color name="fondoMenu">#ffffff</color>
+    
+    <color name="cabeceraAzul">#3e73a7</color>
+    <color name="fondoMenuAzul">#172458</color>
+    <color name="textoFilas">#45b3c0</color>
+    
+    <color name="blanco">#ffffff</color>
+	<color name="gris">#F0F0F0</color>
+    
+    
+</resources>

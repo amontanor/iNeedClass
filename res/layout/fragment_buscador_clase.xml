@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gris"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+         android:background="@color/blanco"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="40dp"
+            android:src="@android:drawable/ic_menu_mapmode" />
+        
+        <Spinner
+            android:id="@+id/spinnerProvincia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/imageView1" />
+        
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_below="@+id/imageView1"
+            android:layout_marginTop="35dp"
+            android:src="@android:drawable/ic_menu_myplaces" />
+        
+        <Spinner
+            android:id="@+id/spinnerPoblacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_marginLeft="16dp"
+            android:spinnerMode="dialog"
+            android:prompt="@string/introPoblacion"
+            android:layout_toRightOf="@+id/imageView2" />
+        
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="16dp"
+            android:layout_alignLeft="@+id/imageView2"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="35dp"
+            android:src="@android:drawable/ic_input_get" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="16dp"
+            android:layout_alignLeft="@+id/imageView3"
+            android:layout_below="@+id/imageView3"
+            android:layout_marginTop="35dp"
+            android:src="@android:drawable/ic_menu_edit" />
+
+        <Spinner
+            android:id="@+id/spinnerMateria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_alignLeft="@+id/spinnerPoblacion"
+            android:prompt="@string/introMateria"
+            android:spinnerMode="dialog"
+            android:layout_alignTop="@+id/imageView3" />
+
+        <Spinner
+            android:id="@+id/spinnerCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_alignTop="@+id/imageView4"
+            android:prompt="@string/introCategoria"
+            android:spinnerMode="dialog"
+            android:layout_toRightOf="@+id/imageView4" />
+        
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonSiguiente"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:background="@color/cabecera"
+        android:text="@string/siguiente"
+        android:textColor="@color/blanco" />
+
+</LinearLayout>
